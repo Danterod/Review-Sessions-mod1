@@ -18,8 +18,19 @@ function findTarget(array, target) {
 
 console.log(findTarget([1,2,3,4], 4));
 
+//return arr.find (ele => ele === target);
+
 
 // Given an array of numbers, return the first number that's bigger than 14 or undefined if no number is bigger than 14
+function findNum(arr) {
+    for (let i = 0; i < array.length; i++) {
+        if (arr[i] > 14) {
+        return arr
+         } else {
+    return undefined
+    }
+}
+
 
 
 
