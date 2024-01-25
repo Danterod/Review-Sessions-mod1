@@ -226,13 +226,11 @@ function getDinoValue (dino, key) {
   // ------------------------------------- -----------------
   // 2. Given a dinosaur object and an mya (Millions of years ago) value, return a boolean indicating whether it was alive during that time or not
   function isDinoAlive(dino, mya) {
-    if (dino.mya.length === 1 || ) {
-      if(dino.mya[0 === mya || dino.mya[0] - 1 === mya)
-      return true;
+    if (dino.mya.length === 1) {
+      return dino.mya[0] === mya || dino.mya[0] - 1 === mya;
     } else {
-
+      return mya > dino,mya[1] && mya <= dino.mya[0];
     }
-
   }
 
   // if dino
@@ -241,8 +239,19 @@ function getDinoValue (dino, key) {
   // ------------------------------------------------------
   // 3. Given an array of dinosaurs and a key return a new array where each dinosaur object is replaced with the corresponding value of a specified key within each object. If no key is given or a wrong key is given, return the dinosaurIds
   
+  //create a function that finds the key values
+  // 
   
+  function findKeyValues(dinosaur,key) {
+    const value = [];
+    for (let dino of dinosaur) {
+      let val = dino.key || dino.dinosaurId;
+         findKeyValues.push(val)
+      }
+  return value;
+}
   
+// return dinosaurs.map (dino) => dino[key || dino.dinosaurId];
   
   
   
