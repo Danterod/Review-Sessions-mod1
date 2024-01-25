@@ -43,7 +43,7 @@ console.log(formatGreeting(rebecca) === "Hello Rebecca Cohen, have a great day a
 function formatString(arr, targetId){
     for (let obj of arr) {
         if (obj.id === targetId) {   
-            let greeting =  "hello" + obj.id + obj.firstName + " " + obj.lastName + "have a great day at your job as a" + obj.occupation;
+            let greeting =  ` Hello ${obj.id} ${obj.firstName}  ${obj.lastName}, have a great day at your job as a ${obj.occupation};`
              return greeting;
         }
     }
@@ -68,7 +68,7 @@ const people = [
   { id: "Vbnp4_3Q", firstName: "Charlotte", lastName: "Taylor", occupation: "Architect" },
 ]
 
-
+console.log(formatString(people, "Tfjso_4M"));
 
 
 
