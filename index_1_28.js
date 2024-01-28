@@ -19,9 +19,8 @@
 // }
 // console.log(getStringLength(str));
 function getStringLength(str) {
-const getStringLength = str;
 return str.map(ele => ele.length) 
-} 
+}  
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
