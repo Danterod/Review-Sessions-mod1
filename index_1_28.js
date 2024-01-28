@@ -45,6 +45,17 @@ console.log(getLengthlongerthan5("Hello" "Ari" "and" "Dante"))
 
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
+function stringsLongerThanFive(stringsArray) {
+    const newArr = [];
+
+    for (const string of stringsArray) {
+        if (string.length > 5) {
+            newArr.push(string.length);
+        }
+    }
+ return newArr;
+}
+console.log(stringsLongerThanFive("helloooooo" "world" "!"))
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
 
 // 5. Write a function that takes an array of numbers and returns the min num
