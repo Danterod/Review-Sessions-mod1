@@ -39,7 +39,7 @@ return str.map(ele => ele.length)
 function getLengthlongerthan5(arr) {
     return arr.filter(str => str.length > 5);
 }
-console.log(getLengthlongerthan5("Hello" "Ari" "and" "Dante"))
+//console.log(getLengthlongerthan5(["Hello" "Ari" "and" "Dante"]))
 
 
 
@@ -55,10 +55,44 @@ function stringsLongerThanFive(stringsArray) {
     }
  return newArr;
 }
-console.log(stringsLongerThanFive("helloooooo" "world" "!"))
+console.log(stringsLongerThanFive("helloooooo", "world", "!"))
+
+//return arr.filter((str) =? str.length > 5).map((str) => str.length)
+
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
+function sumOfEvenNum(arr){
+    let sum = 0;
+    for (let num of arr) {
+        if (num % 2 === 0){
+            sum += num;
+        }
+      }
+      return sum;
+}
+
+
+const sumOfEvenNum = arr.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0)
 
 // 5. Write a function that takes an array of numbers and returns the min num
+function minNum(arr) {
+    // Initialize the min variable with the lowest value possible
+    let min = - infinity;
+// Loop through the array
+    for (let num of arr) {
+        // Check if the array is empty
+    if (arr.length === 0) {
+        return "Array is empty";
+    }
+ // If the current number is smaller than the current min, update min
+        if (num < min) {
+            min = num;
+        }
+    }
+    return min;
+}
+ console.log(minNum([10,24,200,33,55]));
+
+
 
 // 6. Write a function that takes in a string and returns the character that appears the most times (only letters count)
 
