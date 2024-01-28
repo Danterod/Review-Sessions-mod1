@@ -24,6 +24,25 @@ return str.map(ele => ele.length)
 
 // 2. Write a function that takes an array of strings and returns an array of strings longer than 5 characters (spaces count)
 
+// function getLengthlongerthan5(arr) {
+// const five = [];
+//     for (let str of arr ) {
+//     if str.length > 5 {
+//         five.push(str);
+//     return five;
+//     } 
+//  }
+// }
+
+// console.log(getLengthlongerthan5("Hello" "Ari" "and" "Dante"))
+
+function getLengthlongerthan5(arr) {
+    return arr.filter(str => str.length > 5);
+}
+console.log(getLengthlongerthan5("Hello" "Ari" "and" "Dante"))
+
+
+
 // 3. Write a function that takes an array of strings, and returns a new array of the lengths of strings longer than 5 characters
 
 // 4. Write a function that takes an array of numbers and returns the sum of all even numebrs
